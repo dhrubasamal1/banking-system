@@ -11,4 +11,4 @@ The Code for the Banking system is written in Python that simulates fundamental 
 1. Open your terminal (Command Prompt, PowerShell, or macOS/Linux Terminal).
 2. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/](https://github.com/){your-github-username}/{your-repo-name}.git
+   git clone [https://github.com/dhrubasamal1/banking-system.git](https://github.com/dhrubasamal1/banking-system.git)
