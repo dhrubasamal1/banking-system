@@ -10,7 +10,7 @@ The program runs as an interactive terminal session. On start, you either log in
 
 ## Prerequisites
 
-- Python 3 installed on your system (tested on Python 3.12; no version-specific syntax is used, so any Python 3.x release should work)
+- Python 3.x installed on your system (tested on Python 3.14.6)
 - No external libraries or dependencies — the project uses only the Python Standard Library
 - No database, server, or additional configuration of any kind is required
 
