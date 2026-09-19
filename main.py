@@ -4,7 +4,7 @@ def banking_system():
         "1002": {"pin": "5678", "balance": 1500.0}
     }
     
-    #login menu 
+    #login
     while True:
         print("--Welcome to People's Bank--")
         customer_type = input("If you are an existing customer [type E].To create a new account [type N] (or [type X] to exit): ").upper()
@@ -17,24 +17,27 @@ def banking_system():
             print("Invalid choice. Please select E for existing customer or N for a new account.")
             continue
 
-        if customer_type == 'E':
-            account_num = input("Enter your 4 Digit Account Number: ")
-        else:
-            account_num = input("Type an 4 digit Account Number of your choice for your new account: ")
+        while True:
+            if customer_type == 'E':
+                account_num = input("Enter your 4 Digit Account Number: ")
+            else:
+                account_num = input("Type an 4 digit Account Number of your choice for your new account: ")
 
-        if not account_num.isdigit() or len(account_num) != 4:
-            print("Invalid account number. It must contain exactly 4 digits.")
-            continue
+            if not account_num.isdigit() or len(account_num) != 4:
+                print("Invalid account number. It must contain exactly 4 digits.")
+                continue
 
-        if customer_type == 'E':
-            if account_num not in accounts:
+            if customer_type == 'E' and account_num not in accounts:
                 print("Account not found. Please check your account number and try again.")
                 continue
-        elif account_num in accounts:
+
+            if customer_type == 'N' and account_num in accounts:
                 print("That account already exists. Please choose a different account number.")
                 continue
 
-        #login and PIN verification
+            break
+
+        #PIN verification
         if account_num in accounts:
             attempts = 0
             auth_success = False
@@ -64,7 +67,7 @@ def banking_system():
             print("New account created successfully. Your starting balance is ₹ 0.00")
             
             
-        #dashboard
+        #menu
         while True:
             print("Account Main Menu")
             print("1.Deposit Money")
