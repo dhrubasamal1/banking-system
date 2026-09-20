@@ -62,7 +62,12 @@ def banking_system():
                 
         #account creation
         else:
-            new_pin = input("Create a 4-digit PIN for your new account: ")
+            while True:
+                new_pin = input("Create a 4-digit PIN for your new account: ")
+                if new_pin.isdigit() and len(new_pin) == 4:
+                    break
+                print("Invalid PIN. It must contain exactly 4 digits.")
+
             accounts[account_num] = {"pin": new_pin, "balance": 0.0}
             print("New account created successfully. Your starting balance is ₹ 0.00")
             
@@ -79,7 +84,13 @@ def banking_system():
             
             #deposit
             if choice == '1':
-                amount = float(input("Enter amount to deposit: ₹"))
+                while True:
+                    try:
+                        amount = float(input("Enter amount to deposit: ₹"))
+                        break
+                    except ValueError:
+                        print("Invalid amount. Please enter a number.")
+
                 if amount > 0:
                     accounts[account_num]["balance"] += amount
                     print("Transaction Successful!")
@@ -91,7 +102,13 @@ def banking_system():
                     
             #withdrawal
             elif choice == '2':
-                amount = float(input("Enter amount to withdraw: ₹"))
+                while True:
+                    try:
+                        amount = float(input("Enter amount to withdraw: ₹"))
+                        break
+                    except ValueError:
+                        print("Invalid amount. Please enter a number.")
+
                 if amount > 0:
                     if amount <= accounts[account_num]["balance"]:
                         accounts[account_num]["balance"] -= amount
