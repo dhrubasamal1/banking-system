@@ -87,5 +87,3 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 ## Known Limitations
 
 - No persistent storage — all data resets on restart (see note above).
-- Deposit/withdrawal amounts must be entered as valid numbers; non-numeric input will raise an error and stop the program.
-- New-account PINs aren't checked for length or format — any input is accepted, even though the prompt asks for 4 digits.
