@@ -2,10 +2,13 @@
 ## Simple Banking System
 
 ### Submitted By
-- Name: Dhruba Charan Samal
-- Course: B.TECH CSE (Core)
-- College: VIT Bhopal
-- Year: 2026–2030
+Name: Dhruba Charan Samal
+
+Course: B.TECH CSE (Core)
+
+College: VIT Bhopal
+
+Year: 2026–2030
 
 ## Here's What I Built
 
