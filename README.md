@@ -13,8 +13,8 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 ## Prerequisites
 
 - Python 3.1 (or above) installed on your system.
-- No external libraries or dependencies the project uses only the Python Standard Library
-- No database, server, or additional configuration of any kind is required
+- No external libraries or dependencies the project uses only the Python Standard Library.
+- No database, server, or additional configuration of any kind is required.
 
 ## Installation & Setup
 
