@@ -12,7 +12,8 @@ Year: 2026–2030
 
 ## Here's What I Built
 
-So this is a very simple CLI banking system I built in Python basically a mini oversimplified simulation of working of banking system.
+So this is a simple CLI based simplified banking system I built in Python
+
 ## What My Project Can Do
 
 - Log in to an existing account using a 4 digit account number and PIN
@@ -46,12 +47,11 @@ Kept it simple on purpose one file, no extra folders, since the whole thing real
 
 ## What I Learned
 
-Building this helped me in application of a lot of the python concepts in a practical way figuring out how to nested loops and conditionals for a multi-step flow like login → menu → transaction, and thinking through edge cases (what if the account doesn't exist, what if the PIN's wrong three times in a row, what if someone types text where a number should go). Learnt why dictionaries are actually useful for organizing real data.
+Building this helped me in application of a lot of the python concepts in a practical way figuring out how to use nested loops and conditionals for a multi-step flow like login, menu, transaction, and thinking through edge cases (what if the account doesn't exist, what if the PIN's wrong three times in a row, what if someone types text where a number should go). Learnt why dictionaries are actually useful for organizing real data.
 
 ## Future Ideas
 
-- Saving account data to a file so it doesn't reset every time the program restarts (Persistent Storage)
-- Restructuring the code using classes and objects once I learn about OOP concept
+- Saving account data to a file so it doesn't reset every time the program restarts
 - Stronger validation on things like transaction amounts
 - Introducing a simple transaction history log
 
