@@ -24,7 +24,7 @@ So this is a very simple CLI banking system I built in Python basically a mini o
 
 ## Information
 
-- Language: Python 3.x
+- Language: Python
 - No external libraries or dependencies the project uses only the Python Standard Library
 - No database, server, or additional configuration of any kind is required
 - Runs from: any terminal like Command Prompt, PowerShell, or macOS/Linux Terminal
