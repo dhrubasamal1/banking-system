@@ -51,18 +51,18 @@ If you are an existing customer [type E]. To create a new account [type N] (or [
 
 **Type `E` — Log into an existing account**
 
-You'll be asked for a 4 digit account number, then the matching PIN. Two accounts are pre-loaded for testing:
+You'll be asked for a 10 digit account number, then the matching PIN. Two accounts are pre-loaded for testing:
 
 | Account Number | PIN  | Starting Balance |
 |-----------------|------|-------------------|
-| 1001            | 1234 | ₹5000.00          |
-| 1002            | 5678 | ₹1500.00          |
+| 1000000001            | 1234 | ₹5000.00          |
+| 1000000002            | 5678 | ₹1500.00          |
 
-If the account number isn't exactly 4 digits, or doesn't exist, you'll be asked to try again. Three incorrect PIN attempts locks that login attempt and returns you to the start.
+If the account number isn't exactly 10 digits, or doesn't exist, you'll be asked to try again. Three incorrect PIN attempts locks that login attempt and returns you to the start.
 
 **Type `N` — Create a new account**
 
-You'll be asked to choose a 4 digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
+You'll be asked to choose a 10 digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
 
 **Type `X` — Exit the program**
 
