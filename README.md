@@ -86,4 +86,4 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 
 ## Known Limitations
 
-- No persistent storage, all data resets on restart.
+- All data resets on restart.
