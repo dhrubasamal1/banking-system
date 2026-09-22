@@ -21,7 +21,7 @@ So this is a simple CLI based simplified banking system I built in Python
 - Deposit and Withdraw money into the bank account, with a overdraft check
 - Check your current balance anytime
 - Temporarily Locks you out after 3 wrong PIN attempts
-- Handles bad input gracefully if you type letters where a number should go, it just asks again instead of crashing
+- Handles bad input if you type letters where a number should go, it just asks again instead of crashing
 
 ## Information
 
@@ -42,12 +42,10 @@ banking-system/
 └── Project Report
 ```
 
-Kept it simple on purpose one file, no extra folders, since the whole thing really comes down to one function handling the login, menu, and transactions.
-
 
 ## What I Learned
 
-Building this helped me in application of a lot of the python concepts in a practical way figuring out how to use nested loops and conditionals for a multi-step flow like login, menu, transaction, and thinking through edge cases (what if the account doesn't exist, what if the PIN's wrong three times in a row, what if someone types text where a number should go). Learnt why dictionaries are actually useful for organizing real data.
+Building this helped me in application of a lot of the python concepts in a practical way figuring out how to use nested loops and conditionals for a multi-step flow like login, menu, transaction, and thinking through edge cases (what if the account doesn't exist, what if the wron PIN is entered, what if someone types text where a number should go). Learnt why dictionaries are actually useful for organizing real data.
 
 ## Future Ideas
 
@@ -57,7 +55,7 @@ Building this helped me in application of a lot of the python concepts in a prac
 
 ## Final Words
 
-This was my first Python project that feels like a real mini application. It's simple, but it works perfectly as intended.
+This was my first Python project that feels like a real application.
 
 Thank you for checking it out!
 Made with lots of coffee and zero external libraries
