@@ -1,6 +1,6 @@
 # Simple Banking System
 
-A simple banking system written in Python executable on CLI that simulates core banking operations like new account creation, PIN-based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3-attempt PIN lockout.
+A simple banking system written in Python executable on CLI that simulates core banking operations like new account creation, PIN-based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout.
 
 ## Overview
 
@@ -8,12 +8,12 @@ The program runs as an interactive terminal session.
 On start, you choose whether you're an existing customer logging in, a new customer opening an account, or you'd like to exit. 
 From there you can deposit, withdraw, check your balance, or log out and return to the start, all through a simple numbered menu.
 
-**Note on data storage:** All account data (balances, PINs, and any new accounts you create) is held in memory only, for the duration of a single run. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts below.
+**Note on data storage:** All account data is held in memory only, for the duration of a single run. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts below.
 
 ## Prerequisites
 
 - Python 3.x installed on your system.
-- No external libraries or dependencies — the project uses only the Python Standard Library
+- No external libraries or dependencies the project uses only the Python Standard Library
 - No database, server, or additional configuration of any kind is required
 
 ## Installation & Setup
@@ -51,7 +51,7 @@ If you are an existing customer [type E]. To create a new account [type N] (or [
 
 **Type `E` — Log into an existing account**
 
-You'll be asked for a 4-digit account number, then the matching PIN. Two accounts are pre-loaded for testing:
+You'll be asked for a 4 digit account number, then the matching PIN. Two accounts are pre-loaded for testing:
 
 | Account Number | PIN  | Starting Balance |
 |-----------------|------|-------------------|
@@ -62,7 +62,7 @@ If the account number isn't exactly 4 digits, or doesn't exist, you'll be asked 
 
 **Type `N` — Create a new account**
 
-You'll be asked to choose a 4-digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
+You'll be asked to choose a 4 digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
 
 **Type `X` — Exit the program**
 
@@ -86,4 +86,4 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 
 ## Known Limitations
 
-- No persistent storage — all data resets on restart.
+- No persistent storage, all data resets on restart.
