@@ -18,8 +18,8 @@ I have created a simple banking system written in Python that simulates basic ba
 
 ## What My Project Can Do
 
-- Log in to an existing testing accounts using a 4 digit account number and PIN.
-- Create a new account with a validated 4 digit account number and PIN.
+- Log in to an existing testing accounts using a 10 digit account number and PIN.
+- Automatically creates a new 10 digit unique account number using the random library and user will be able to create a PIN manually.
 - Deposit or Withdraw money into the bank account, with a overdraft check.
 - Check your current balance anytime.
 - Temporarily Locks you out after 3 wrong PIN attempts.
