@@ -1,7 +1,16 @@
+import random
+
+def generate_account_number(accounts):
+    account_num = str(random.randint(1000000000, 9999999999))
+    while account_num in accounts:
+        account_num = str(random.randint(1000000000, 9999999999))
+    return account_num
+
+
 def banking_system():
     accounts = {
-        "1001": {"pin": "1234", "balance": 5000.0},
-        "1002": {"pin": "5678", "balance": 1500.0}
+        "1000000001": {"pin": "1234", "balance": 5000.0},
+        "1000000002": {"pin": "5678", "balance": 1500.0}
     }
     
     #login
@@ -19,20 +28,18 @@ def banking_system():
 
         while True:
             if customer_type == 'E':
-                account_num = input("Enter your 4 Digit Account Number: ")
+                account_num = input("Enter your 10 Digit Account Number: ")
             else:
-                account_num = input("Type an 4 digit Account Number of your choice for your new account: ")
+                account_num = generate_account_number(accounts)
+                print("Your new 10 digit account number is:", account_num)
+                break
 
-            if not account_num.isdigit() or len(account_num) != 4:
-                print("Invalid account number. It must contain exactly 4 digits.")
+            if not account_num.isdigit() or len(account_num) != 10:
+                print("Invalid account number. It must contain exactly 10 digits.")
                 continue
 
             if customer_type == 'E' and account_num not in accounts:
                 print("Account not found. Please check your account number and try again.")
-                continue
-
-            if customer_type == 'N' and account_num in accounts:
-                print("That account already exists. Please choose a different account number.")
                 continue
 
             break
