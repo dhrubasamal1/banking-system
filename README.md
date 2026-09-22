@@ -1,6 +1,6 @@
 # Simple Banking System
 
-A simple banking system written in Python executable on CLI that simulates core banking operations — new account creation, PIN-based login for existing accounts, deposits, withdrawals, and balance checks — with overdraft protection and a 3-attempt PIN lockout.
+A simple banking system written in Python executable on CLI that simulates core banking operations like new account creation, PIN-based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3-attempt PIN lockout.
 
 ## Overview
 
@@ -28,7 +28,7 @@ From there you can deposit, withdraw, check your balance, or log out and return 
    cd banking-system
    ```
 
-There is no dependency installation step and no configuration file to edit — the project runs as-is once cloned.
+There is no dependency installation step and no configuration file to edit, the project runs as is once cloned.
 
 ## Running the Project
 
@@ -45,7 +45,7 @@ python3 main.py
 Once running, you'll be asked:
 
 ```
---Welcome to People's Bank--
+Welcome to People's Bank
 If you are an existing customer [type E]. To create a new account [type N] (or [type X] to exit):
 ```
 
@@ -62,7 +62,7 @@ If the account number isn't exactly 4 digits, or doesn't exist, you'll be asked 
 
 **Type `N` — Create a new account**
 
-You'll be asked to choose a 4-digit account number (it must not already be in use — `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
+You'll be asked to choose a 4-digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
 
 **Type `X` — Exit the program**
 
@@ -78,7 +78,7 @@ Account Main Menu
 4.Log Out
 ```
 
-- **Deposit / Withdraw**: enter a positive amount when prompted. Withdrawals are blocked if they'd exceed your current balance.
+- **Deposit / Withdraw**: enter a positive amount when prompted. Withdrawals are blocked if withdrawl amount is greater than your current balance.
 - **Check Balance**: prints your current balance.
 - **Log Out**: returns you to the start screen (E / N / X) so you can log into a different account, create another, or exit.
 
