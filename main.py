@@ -6,7 +6,7 @@ def banking_system():
     
     #login
     while True:
-        print("--Welcome to People's Bank--")
+        print("Welcome to People's Bank")
         customer_type = input("If you are an existing customer [type E].To create a new account [type N] (or [type X] to exit): ").upper()
 
         if customer_type == 'X':
