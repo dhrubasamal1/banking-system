@@ -14,13 +14,13 @@ Year: 2026–2030
 
 ## Here's What I Built
 
-Icreated a simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout.
+I have created a simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout.
 
 ## What My Project Can Do
 
 - Log in to an existing testing accounts using a 4 digit account number and PIN.
 - Create a new account with a validated 4 digit account number and PIN.
-- Deposit and Withdraw money into the bank account, with a overdraft check.
+- Deposit or Withdraw money into the bank account, with a overdraft check.
 - Check your current balance anytime.
 - Temporarily Locks you out after 3 wrong PIN attempts.
 - Handles bad input if you type letters where a number should go, it just asks again instead of crashing.
