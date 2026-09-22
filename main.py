@@ -43,7 +43,7 @@ def banking_system():
             auth_success = False
             
             while True:
-                pin = input("Enter your 4-digit PIN: ")
+                pin = input("Enter your 4 digit PIN: ")
                 
                 if pin == accounts[account_num]["pin"]:
                     print("Login successful. Welcome back!")
@@ -63,7 +63,7 @@ def banking_system():
         #account creation
         else:
             while True:
-                new_pin = input("Create a 4-digit PIN for your new account: ")
+                new_pin = input("Create a 4 digit PIN for your new account: ")
                 if new_pin.isdigit() and len(new_pin) == 4:
                     break
                 print("Invalid PIN. It must contain exactly 4 digits.")
