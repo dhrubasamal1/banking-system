@@ -28,7 +28,7 @@ So this is a very simple CLI banking system I built in Python basically a mini o
 - No external libraries or dependencies the project uses only the Python Standard Library
 - No database, server, or additional configuration of any kind is required
 - Runs from: any terminal like Command Prompt, PowerShell, or macOS/Linux Terminal
-- Data storage: everything lives in memory for the session (no file or database yet — see Future Ideas!)
+- Data storage: everything lives in memory for the session
 
 ## How I Organized Everything (Folder Structure)
 
