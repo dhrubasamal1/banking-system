@@ -62,7 +62,7 @@ If the account number isn't exactly 10 digits, or doesn't exist, you'll be asked
 
 **Type `N` - Create a new account**
 
-You'll be asked to choose a 10 digit account number (it must not already be in use `1001` and `1002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
+You'll be asked to choose a 10 digit account number (it must not already be in use `1000000001` and `1000000002` are taken), then to set a PIN. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
 
 **Type `X` - Exit the program**
 
