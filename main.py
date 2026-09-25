@@ -29,7 +29,7 @@ def banking_system():
                 break
 
             if not account_number_digit_checker(account_number):
-                print("Invalid account number. The account number must be of 10 digits.")
+                print("IAccount number is invalid. The account number must be of 10 digits.")
                 continue
 
             if customer_type == "E" and account_number not in accounts:
