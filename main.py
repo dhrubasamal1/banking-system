@@ -78,7 +78,7 @@ def banking_system():
                 print("Invalid choice. Please select a valid option from the menu.")
 
             if choice in ["1", "2", "3"]:
-                continue_choice = input("Press "Enter" to return to the Main Menu, or type "L" to log out: ").upper()
+                continue_choice = input("[Press Enter] to return to the Main Menu, or [type L] to log out: ").upper()
                 if continue_choice == "L":
                     print("Logging out...")
                     break
