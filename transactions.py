@@ -1,6 +1,7 @@
 def depositor(accounts, account_number):
 
-# using try except here because converting the input to float() will give an error if the user types anything else instead of a number
+# using try except here because converting the input to float() will give an error, if the user types anything else instead of a number.
+
     while True:
         try:
             amount = float(input("Enter amount to deposit: INR"))
