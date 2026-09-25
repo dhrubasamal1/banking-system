@@ -22,10 +22,10 @@ def banking_system():
 
         while True:
             if customer_type == 'E':
-                account_number = input("Enter your 10 Digit account aumber: ")
+                account_number = input("Enter your 10 Digit account number: ")
             else:
                 account_number = generate_account_number(accounts)
-                print("Successfully created you new account. Your new 10 digit account number is:", account_number)
+                print("Successfully created your new account. Your new 10 digit account number is:", account_number)
                 break
 
             if not account_number_digit_checker(account_number):
@@ -33,15 +33,15 @@ def banking_system():
                 continue
 
             if customer_type == 'E' and account_number not in accounts:
-                print("Account not found. Please check your account mumber and try again.")
+                print("Account not found. Please check your account number and try again.")
                 continue
 
             break
 
         #PIN verification
         if account_number in accounts:
-            authenication_handler = authenticator(accounts, account_number)
-            if not authenication_handler:
+            authentication_handler = authenticator(accounts, account_number)
+            if not authentication_handler:
                 continue
 
         #account creation
