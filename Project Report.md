@@ -42,8 +42,7 @@ banking-system/
 └── main.py
 └── account.py
 └── transactions.py
-└── Folder Structure
-└── Project Report
+└── Project Report.md
 ```
 
 

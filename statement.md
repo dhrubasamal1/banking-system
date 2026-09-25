@@ -21,6 +21,6 @@ All data is stored i -memory during runtime, meaning no local file storage is us
 ## High Level Features
 
 - User Management: Handles new account creation with automated 10 digit account number generation and facilitates PIN based login for existing customers. The Program is also able to handle databases of multiple users.
-- Transaction Processing: Manages financial operations by updating account balances through account deposits and withdrawals. 
+- Robust Error Handling: Utilizes try except blocks to catch invalid inputs (like typing letters instead of amounts) so the program asks again instead of crashing.
 - Account Monitoring: Allows users to read and check their current account balance or log out to return to the main menu. 
 - Security: Implements a strict 3 attempt PIN lockout mechanism to prevent unauthorized access
