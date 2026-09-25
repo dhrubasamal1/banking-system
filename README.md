@@ -87,3 +87,4 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 ## Known Limitations
 
 - All data resets on restart.
+- Accepting Infinity as Valid Inputs.
