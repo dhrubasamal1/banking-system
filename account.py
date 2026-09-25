@@ -1,6 +1,6 @@
 import random
 
-def accounts_number_digit_checker(account_number):
+def account_number_digit_checker(account_number):
     return account_number.isdigit() and len(account_number) == 10
 
 def pin_digits_checker(pin):
@@ -8,7 +8,7 @@ def pin_digits_checker(pin):
         return True
     return False
 
-def generate_accounts_number(accounts):
+def generate_account_number(accounts):
     account_number = str(random.randint(1000000000, 9999999999))
     while account_number in accounts:
         account_number = str(random.randint(1000000000, 9999999999))
@@ -30,4 +30,5 @@ def authenticator(accounts, account_number):
             if attempts == 3:
                 print("Account Locked: Too many failed attempts.")
                 return False
+
             print("PIN is Incorrect. Remaining Attempts:", 3 - attempts)
