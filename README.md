@@ -1,10 +1,10 @@
 # Simple Banking System
 
-A simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout.
+A simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout. The code is across multiple files/modules (main.py, account.py, and transactions.py)
 
 ## Overview
 
-The program runs as an interactive terminal session. 
+The program can run on CLI terminal. 
 On start, you choose whether you're an existing customer logging in, a new customer opening an account, or you'd like to exit. 
 From there you can deposit, withdraw, check your balance, or log out and return to the start, all through a simple numbered menu.
 
@@ -78,7 +78,7 @@ Account Main Menu
 4.Log Out
 ```
 
-- **Deposit / Withdraw**: enter a positive amount (Withdrawals are blocked if withdrawal amount is greater than your current balance).
+- **Deposit / Withdraw**: enter a positive amount (Withdrawals are blocked if withdrawal amount is greater than the current balance of the user).
 - **Check Balance**: prints your current balance.
 - **Log Out**: returns you to the start screen (E / N / X) so you can log into a different account, create another, or exit.
 
@@ -87,4 +87,4 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 ## Known Limitations
 
 - All data resets on restart.
-- Accepting Infinity as Valid Inputs.
+- Accepting infinity as valid inputs.

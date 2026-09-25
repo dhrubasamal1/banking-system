@@ -13,7 +13,7 @@ def depositor(accounts, account_number):
         accounts[account_number]["balance"] += amount
         print("Transaction Successful!")
         print("Deposited: INR", format(amount, ".2f"))
-        print("Current Balance for Account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
+        print("Current Balance for account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
     else:
         print("Invalid amount. Please enter a positive number.")
 
@@ -30,11 +30,11 @@ def withdrawler(accounts, account_number):
             accounts[account_number]["balance"] -= amount
             print("Transaction Successful!")
             print("Withdrew: INR", format(amount, ".2f"))
-            print("Current Balance for Account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
+            print("Current balance for account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
         else:
             print("Transaction failed: Insufficient funds.")
     else:
-        print("Invalid amount. Please enter a positive number.")
+        print("Amount is invalid. Please enter a positive number.")
 
 def balance_checker(accounts, account_number):
-    print("Current Balance for Account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
+    print("Current balance for account number", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
