@@ -13,7 +13,7 @@ def banking_system():
         customer_type = input("If you are an existing customer [type E]. To create a new account [type N] (or [type X] to exit): ").upper()
 
         if customer_type == "X":
-            print("Thank you for visiting People"s Bank.")
+            print("Thank you for visiting People's Bank.")
             break
 
         if customer_type not in ["E", "N"]:
