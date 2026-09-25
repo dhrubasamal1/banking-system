@@ -7,7 +7,7 @@ def banking_system():
         "1000000002": {"pin": "5678", "balance": 1500.0}
     }
 
-    #login
+    #code for login
     while True:
         print("Welcome to People's Bank")
         customer_type = input("If you are an existing customer [type E]. To create a new account [type N] (or [type X] to exit): ").upper()
@@ -38,13 +38,13 @@ def banking_system():
 
             break
 
-        #PIN verification
+        #code for verification of user entered PIN
         if account_number in accounts:
             authentication_handler = authenticator(accounts, account_number)
             if not authentication_handler:
                 continue
 
-        #account creation
+        #code for account creation
         else:
             while True:
                 new_pin = input("Create a 4 digit PIN for your new account: ")
@@ -55,7 +55,7 @@ def banking_system():
             create_account(accounts, account_number, new_pin)
             print("New account created successfully. Your starting balance is INR 0.00")
 
-        #menu
+        #account main menu
         while True:
             print("Account Main Menu")
             print("1.Deposit Money")
