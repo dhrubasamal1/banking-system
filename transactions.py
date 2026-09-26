@@ -7,15 +7,15 @@ def depositor(accounts, account_number):
             amount = float(input("Enter amount to deposit: INR"))
             break
         except ValueError:
-            print("Invalid amount. Please enter a number.")
+            print("Amount is invalid. Please enter a number.")
 
     if amount > 0:
         accounts[account_number]["balance"] += amount
         print("Transaction Successful!")
         print("Deposited: INR", format(amount, ".2f"))
-        print("Current Balance for account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
+        print("Current balance for account", account_number, "is: INR", format(accounts[account_number]["balance"], ".2f"))
     else:
-        print("Invalid amount. Please enter a positive number.")
+        print("Amount is invalid. Please enter a positive number.")
 
 def withdrawler(accounts, account_number):
     while True:
@@ -23,7 +23,7 @@ def withdrawler(accounts, account_number):
             amount = float(input("Enter amount to withdraw: INR"))
             break
         except ValueError:
-            print("Invalid amount. Please enter a number.")
+            print("Amount is invalid. Please enter a number.")
 
     if amount > 0:
         if amount <= accounts[account_number]["balance"]:
