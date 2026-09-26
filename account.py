@@ -23,7 +23,7 @@ def authenticator(accounts, account_number):
         pin = input("Enter your 4 digit PIN: ")
 
         if pin == accounts[account_number]["pin"]:
-            print("Login successful. Welcome back!")
+            print("Login Successful. Welcome Back!")
             return True
         else:
             attempts += 1
