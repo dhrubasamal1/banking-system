@@ -43,6 +43,7 @@ banking-system/
 └── account.py
 └── transactions.py
 └── Project Report.md
+└── .gitignore
 ```
 
 
