@@ -1,11 +1,10 @@
 from account import generate_account_number, create_account, authenticator, account_number_digit_checker, pin_digits_checker
 from transactions import depositor, withdrawler, balance_checker
+from menu import menu
+from database import database
 
 def banking_system():
-    accounts = {
-        "1000000001": {"pin": "1234", "balance": 5000.0},
-        "1000000002": {"pin": "5678", "balance": 1500.0}
-    }
+    accounts = database()
 
     #code for login
     while True:
@@ -57,12 +56,8 @@ def banking_system():
 
         #account main menu
         while True:
-            print("Account Main Menu")
-            print("1.Deposit Money")
-            print("2.Withdraw Money")
-            print("3.Check Balance")
-            print("4.Log Out")
-
+            menu()
+            
             choice = input("Enter your choice (1-4): ")
 
             if choice == "1":
