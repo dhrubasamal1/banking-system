@@ -1,8 +1,7 @@
 ## Problem Statement
 
 Banking systems require the ability to access account securely and accurately.
-This project addresses that problem, showing how a program can authenticate a user, maintain account state, this program solves the need for a lightweight, secure, and dependency free system to simulate banking system functioning  without relying on external modules and databases. 
-
+This project addresses that problem, showing how a program can authenticate a user, maintain account state, this program solves the need for a lightweight, secure, and dependency free code. The most important requirement is being able to run on any OS without any external needs.
 
 ## Scope of Project
 
@@ -16,7 +15,6 @@ All data is stored i -memory during runtime, meaning no local file storage is us
 
 - Students and educators needing a clean, dependency-free project to understand data structures like dictionaries and basic error handling.
 - Developers who want a lightweight base app for an ATM or banking logic system to expand upon without configuring servers.
-
 
 ## High Level Features
 
