@@ -15,7 +15,7 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 - Log in to an existing testing accounts using a 10 digit account number and PIN.
 - Automatically creates a new 10 digit unique account number using the random library and user will be able to create a PIN manually.
 - Deposit or Withdraw money into the bank account, with a overdraft check.
-- Check your current balance anytime.
+- Check your current balance.
 - Temporarily Locks you out after 3 wrong PIN attempts.
 - Handles bad input if you type letters where a number should go, it just asks again instead of crashing.
 
@@ -33,22 +33,7 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 - No external libraries or dependencies the project uses only the Python Standard Library.
 - No database, server, or additional configuration of any kind is required.
 
-## Installation & Setup
-
-1. Open any CLI terminal.
-
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/dhrubasamal1/banking-system.git
-   ```
-3. Move into the project directory:
-   ```bash
-   cd banking-system
-   ```
-
-There is no dependency installation step and no configuration file to edit, the project runs as is once cloned.
-
-## How I Organized Everything (Folder Structure)
+## Folder Structure
 
 ```
 banking-system/
@@ -61,16 +46,26 @@ banking-system/
 └── database.py
 └── .gitignore
 ```
+## Installation, Setup and Running the Project
 
-## Running the Project
+1. Open any CLI terminal.
 
-Start the program from the project directory with:
-
-```bash
-python3 main.py
-```
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/dhrubasamal1/banking-system.git
+   ```
+3. Move into the project directory:
+   ```bash
+   cd banking-system
+   ```
+4. Start the program from the project directory with:
+   ```bash
+   python3 main.py
+   ```
 
 (If `python3` isn't recognized, use `python main.py` instead.)
+
+There is no dependency installation step and no configuration file to edit, the project runs as is once cloned.
 
 ## Usage
 
@@ -94,7 +89,7 @@ If the account number isn't exactly 10 digits, or doesn't exist, you'll be asked
 
 **Type `N` - Create a new account**
 
-Once you choose to create a new account, a new unique 10 digit account number will automatically be created using the python random module, then the user has to set up a PIN for the newly created account. The account is created immediately with a ₹0.00 balance and you're taken straight into it — no separate login step needed right after creating it.
+Once you choose to create a new account, a new unique 10 digit account number will automatically be created using the python random module, then the user has to set up a PIN for the newly created account. The account is created immediately with a ₹0.00 balance and you're taken straight into it, no separate login step needed right after creating it.
 
 **Type `X` - Exit the program**
 
