@@ -6,5 +6,4 @@ banking-system/
 └── transactions.py
 └── menu.py
 └── database.py
-└── Project Report.md
 └── .gitignore
