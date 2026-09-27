@@ -1,6 +1,6 @@
 # Simple Banking System
 
-A simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout. The code is across multiple files/modules (main.py, account.py, and transactions.py)
+A simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout. The code is across multiple files/modules (main.py, account.py, menu.py, database.py and transactions.py)
 
 ## Overview
 
@@ -9,6 +9,23 @@ On start, you choose whether you're an existing customer logging in, a new custo
 From there you can deposit, withdraw, check your balance, or log out and return to the start, all through a simple numbered menu.
 
 **Note on data storage:** All account data is held in memory only, for the duration of a single run. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts below.
+
+## Features
+
+- Log in to an existing testing accounts using a 10 digit account number and PIN.
+- Automatically creates a new 10 digit unique account number using the random library and user will be able to create a PIN manually.
+- Deposit or Withdraw money into the bank account, with a overdraft check.
+- Check your current balance anytime.
+- Temporarily Locks you out after 3 wrong PIN attempts.
+- Handles bad input if you type letters where a number should go, it just asks again instead of crashing.
+
+## Information
+
+- Language: Python.
+- No external libraries or dependencies the project uses only the Python Standard Library.
+- No database, server, or additional configuration of any kind is required.
+- Runs from: any terminal like Command Prompt, PowerShell, or macOS/Linux Terminal.
+- Data storage: everything lives in memory for the session.
 
 ## Prerequisites
 
@@ -29,6 +46,20 @@ From there you can deposit, withdraw, check your balance, or log out and return 
    ```
 
 There is no dependency installation step and no configuration file to edit, the project runs as is once cloned.
+
+## How I Organized Everything (Folder Structure)
+
+```
+banking-system/
+├── README.md
+├── LICENSE
+└── main.py
+└── account.py
+└── transactions.py
+└── menu.py
+└── database.py
+└── .gitignore
+```
 
 ## Running the Project
 
@@ -88,3 +119,9 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 
 - All data resets on restart.
 - Accepting infinity as valid inputs.
+
+## Future Ideas
+
+- Saving account data to a file so it doesn't reset every time the program restarts.
+- Stronger validation on things like transaction amounts.
+- Introducing a simple transaction history log.
