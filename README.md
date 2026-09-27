@@ -5,10 +5,10 @@ A simple banking system written in Python that simulates basic banking operation
 ## Overview
 
 The program can run on CLI terminal. 
-On start, you choose whether you're an existing customer logging in, a new customer opening an account, or you'd like to exit. 
-From there you can deposit, withdraw, check your balance, or log out and return to the start, all through a simple numbered menu.
+On start, you choose whether you are an existing customer logging in, a new customer opening an account, or you would like to exit. 
+From there you can deposit, withdraw, check your balance, or log out and return to the main menu.
 
-**Note on data storage:** All account data is held in memory only, for the duration of a single run. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts below.
+**Note on data storage:** All account data is held in memory only. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts.
 
 ## Features
 
@@ -35,7 +35,8 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 
 ## Installation & Setup
 
-1. Open a terminal (Command Prompt, PowerShell, or macOS/Linux Terminal).
+1. Open any CLI terminal.
+
 2. Clone the repository:
    ```bash
    git clone https://github.com/dhrubasamal1/banking-system.git
