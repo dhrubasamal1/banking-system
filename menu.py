@@ -1,3 +1,4 @@
+#contains the main menu
 def menu():
     print("Account Main Menu")
     print("1.Deposit Money")

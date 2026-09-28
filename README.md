@@ -129,10 +129,8 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 ## Known Limitations
 
 - All data resets on restart.
-- Accepting infinity as valid inputs.
 
 ## Future Ideas
 
 - Saving account data to a file so it doesn't reset every time the program restarts.
-- Stronger validation on things like transaction amounts.
 - Introducing a simple transaction history log.

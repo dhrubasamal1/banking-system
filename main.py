@@ -37,7 +37,7 @@ def banking_system():
 
             break
 
-        #code for verification of user entered PIN
+        #code for verification of PIN entered by user
         if account_number in accounts:
             authentication_handler = authenticator(accounts, account_number)
             if not authentication_handler:
@@ -54,7 +54,7 @@ def banking_system():
             create_account(accounts, account_number, new_pin)
             print("New account created successfully. Your starting balance is INR 0.00")
 
-        #account main menu
+        #code for account main menu
         while True:
             menu()
             
