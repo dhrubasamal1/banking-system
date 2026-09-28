@@ -6,9 +6,8 @@ This project addresses that problem, showing how a program can authenticate a us
 ## Scope of Project
 
 The scope of this project is limited to creating a simple simulation of how banking system works that can perform banking operations. 
-It covers the core banking loop: 
-account creation, user authentication, and basic financial transactions.
-All data is stored in memory during runtime, meaning no local file storage is used. It is designed as a localized, session based demonstration.
+It covers the core banking loop like - account creation, user authentication, and basic financial transactions.
+All data is stored in memory during runtime, meaning no file storage is used. It is designed as a localized, session based demonstration.
 
 ## Overview
 
@@ -21,7 +20,7 @@ Note on data storage - All account data is held in memory only. Nothing is writt
 
 ## Target Users
 
-- Students and educators needing a clean, dependency-free project to understand data structures like dictionaries and basic error handling.
+- Students and educators needing a clean, dependency free project to understand data structures like dictionaries and basic error handling.
 - Developers who want a lightweight base app for an ATM or banking logic system to expand upon without configuring servers.
 
 ## High Level Features

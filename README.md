@@ -8,7 +8,7 @@ The program can run on CLI terminal.
 On start, you choose whether you are an existing customer logging in, a new customer opening an account, or you would like to exit. 
 From there you can deposit, withdraw, check your balance, or log out and return to the main menu.
 
-**Note on data storage:** All account data is held in memory only. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts.
+**Note on data storage:** All account data is held in memory only. Nothing is saved permanently to storage, so restarting the program resets everything back to the two demo accounts.
 
 ## Features
 
@@ -16,7 +16,7 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 - Automatically creates a new 10 digit unique account number using the random library and user will be able to create a PIN manually.
 - Deposit or Withdraw money into the bank account, with a overdraft check.
 - Check your current balance.
-- Temporarily Locks you out after 3 wrong PIN attempts.
+- Temporarily locks you out after 3 wrong PIN attempts.
 - Handles bad input if you type letters where a number should go, it just asks again instead of crashing.
 
 ## Information
@@ -24,8 +24,8 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 - Language: Python.
 - No external libraries or dependencies the project uses only the Python Standard Library.
 - No database, server, or additional configuration of any kind is required.
-- Runs from: any terminal like Command Prompt, PowerShell, or macOS/Linux Terminal.
-- Data storage: everything lives in memory for the session.
+- Runs from any CLI terminal like Command Prompt, PowerShell, or macOS/Linux Terminal.
+- Everything remains in memory for the session, no permanent storage of data.
 
 ## Prerequisites
 
