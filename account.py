@@ -21,7 +21,7 @@ def generate_account_number(accounts):
 def create_account(accounts, account_number, pin):
     accounts[account_number] = {"pin": pin, "balance": 0.0}
 
-#code for account information verification
+#code to check if the PIN is correct and for to prevent brute force attacks (3 fail account teporary block function)
 def authenticator(accounts, account_number):
     attempts = 0
     while True:

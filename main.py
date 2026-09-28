@@ -6,7 +6,7 @@ from database import database
 def banking_system():
     accounts = database()
 
-    #code for login
+#code for login
     while True:
         print("Welcome to People's Bank")
         customer_type = input("If you are an existing customer [type E]. To create a new account [type N] (or [type X] to exit): ").upper()
@@ -15,6 +15,7 @@ def banking_system():
             print("Thank you for visiting People's Bank.")
             break
 
+#to prevent the user from entering a invalid choice
         if customer_type not in ["E", "N"]:
             print("Invalid choice. If you are an existing customer [type E]. To create a new account [type N] (or [type X] to exit): ")
             continue
@@ -27,6 +28,7 @@ def banking_system():
                 print("Successfully created your new account. Your new 10 digit account number is:", account_number)
                 break
 
+#to prevent the user from entering a invalid account number
             if not account_number_digit_checker(account_number):
                 print("Account number is invalid. The account number must be of 10 digits.")
                 continue
@@ -37,13 +39,13 @@ def banking_system():
 
             break
 
-        #code for verification of PIN entered by user
+#code for verification of PIN entered by user
         if account_number in accounts:
             authentication_handler = authenticator(accounts, account_number)
             if not authentication_handler:
                 continue
 
-        #code for account creation
+#code for account creation
         else:
             while True:
                 new_pin = input("Create a 4 digit PIN for your new account: ")
@@ -54,7 +56,7 @@ def banking_system():
             create_account(accounts, account_number, new_pin)
             print("New account created successfully. Your starting balance is INR 0.00")
 
-        #code for account main menu
+#code for account main menu
         while True:
             menu()
             
@@ -72,6 +74,7 @@ def banking_system():
             else:
                 print("Invalid choice. Please select a valid option from the menu.")
 
+#code for account exit menu
             if choice in ["1", "2", "3"]:
                 continue_choice = input("[Press Enter] to return to the Main Menu, or [type L] to log out: ").upper()
                 if continue_choice == "L":

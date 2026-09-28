@@ -5,14 +5,14 @@ def depositor(accounts, account_number):
 
 # using try except here because converting the input to float() will give an error, if the user types anything else instead of a number.
     while True:
-        #to prevent the user from entering a invalid input
+        #to prevent the user from entering a invalid amount
         try:
             amount = float(input("Enter amount to deposit: INR"))
             break
         except ValueError:
             print("Amount is invalid. Please enter a number.")
 
-#to prevent the user from entering a invalid input
+#to prevent the user from entering a invalid amount
     if amount > 0 and math.isfinite(amount):
         accounts[account_number]["balance"] += amount
         print("Transaction Successful!")
@@ -24,14 +24,14 @@ def depositor(accounts, account_number):
 #code for withdrawing money
 def withdrawler(accounts, account_number):
     while True:
-        #to prevent the user from entering a invalid input
+        #to prevent the user from entering a invalid amount
         try:
             amount = float(input("Enter amount to withdraw: INR"))
             break
         except ValueError:
             print("Amount is invalid. Please enter a number.")
             
-#to prevent the user from entering a invalid input
+#to prevent the user from entering a invalid amount and prevent overdrafting
     if amount > 0 and math.isfinite(amount):
         if amount <= accounts[account_number]["balance"]:
             accounts[account_number]["balance"] -= amount
