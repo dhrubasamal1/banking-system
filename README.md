@@ -37,14 +37,18 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 
 ```
 banking-system/
-├── README.md
+├── screenshots/
+│   ├── existing-user.png
+│   └── new-user.png
+├── .gitignore
 ├── LICENSE
-└── main.py
-└── account.py
+├── README.md
+├── statement.md
+├── account.py
+├── database.py
+├── main.py
+├── menu.py
 └── transactions.py
-└── menu.py
-└── database.py
-└── .gitignore
 ```
 ## Installation, Setup and Running the Project
 
@@ -115,7 +119,7 @@ After a deposit, withdrawal, or balance check, press **Enter** to return to the 
 
 1. Existing User
 
-![alt text](screenshots/exixting-user.png)
+![alt text](screenshots/existing-user.png)
 
 2. New User
 

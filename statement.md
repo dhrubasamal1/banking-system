@@ -8,7 +8,15 @@ This project addresses that problem, showing how a program can authenticate a us
 The scope of this project is limited to creating a simple simulation of how banking system works that can perform banking operations. 
 It covers the core banking loop: 
 account creation, user authentication, and basic financial transactions.
-All data is stored i -memory during runtime, meaning no local file storage is used. It is designed as a localized, session based demonstration.
+All data is stored in memory during runtime, meaning no local file storage is used. It is designed as a localized, session based demonstration.
+
+## Overview
+
+The program can run on CLI terminal. 
+On start, you choose whether you are an existing customer logging in, a new customer opening an account, or you would like to exit. 
+From there you can deposit, withdraw, check your balance, or log out and return to the main menu.
+
+Note on data storage - All account data is held in memory only. Nothing is written to disk, so restarting the program resets everything back to the two demo accounts.
 
 
 ## Target Users
