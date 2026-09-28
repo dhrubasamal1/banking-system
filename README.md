@@ -111,6 +111,12 @@ Account Main Menu
 
 After a deposit, withdrawal, or balance check, press **Enter** to return to the menu, or type **L** to log out.
 
+## Screenshots
+
+<img width="602" height="252" alt="image" src="https://github.com/user-attachments/assets/85fb8298-9658-452b-b1e7-84f289771147" />
+
+<img width="941" height="511" alt="image" src="https://github.com/user-attachments/assets/8334b9a8-b4d4-4dc4-b91b-d679e3e95d35" />
+
 ## Known Limitations
 
 - All data resets on restart.
