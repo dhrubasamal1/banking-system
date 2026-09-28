@@ -2,7 +2,7 @@
 
 A simple banking system written in Python that simulates basic banking operations like new account creation, PIN based login for existing accounts, deposits, withdrawals, and balance checks with overdraft protection and a 3 attempt PIN lockout. The code is across multiple files/modules (main.py, account.py, menu.py, database.py and transactions.py)
 
-## Overview
+## Overview of the Project
 
 The program can run on CLI terminal. 
 On start, you choose whether you are an existing customer logging in, a new customer opening an account, or you would like to exit. 
@@ -32,6 +32,15 @@ From there you can deposit, withdraw, check your balance, or log out and return 
 - Python 3.1 (or above) installed on your system.
 - No external libraries or dependencies the project uses only the Python Standard Library.
 - No database, server, or additional configuration of any kind is required.
+
+## Technology and Tools Used
+
+- Programming Language: Python 3
+- Libraries: Python Standard Library
+- Version Control: Git & GitHub
+- Development Environment: VS Code
+- Execution Environment: Windows Terminal CLI and VS Code
+- Tested On: Windows 11
 
 ## Folder Structure
 
@@ -71,7 +80,7 @@ banking-system/
 
 There is no dependency installation step and no configuration file to edit, the project runs as is once cloned.
 
-## Usage
+## Instruction for Testing
 
 Once running, you'll be asked:
 
